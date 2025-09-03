@@ -1,32 +1,39 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
 import pages.Login;
-import utils.ConfigReader;
+import pages.Logout;
 
 
-public class LoginTest {
-    WebDriver driver;
-    Login login;
-    ConfigReader config;
+public class LoginTest extends BaseTest {
+    private Login login;
+    private Logout logout;
 
     @BeforeClass()
-    public void setup(){
-        config = new ConfigReader();
-        driver = new ChromeDriver();
-        driver.get(config.getProperty("url"));
-        driver.manage().window().maximize();
+    public void initPage(){
+        super.setup();
         login = new Login(driver);
+        logout = new Logout(driver);
     }
 
-    @Test
+    @Test(priority = 1)
+    public void invalidLogin() throws InterruptedException{
+        login.performLogin(config.getProperty("wronguser"), "wrongpass");
+        Thread.sleep(3000);
+        Assert.assertTrue(driver.getPageSource().contains("Invalid credentials"));
+    }
+    
+    @Test(priority = 2)
+    public void emptyCredentialLogin(){
+        login.performLogin("", "");
+        Assert.assertTrue(driver.getPageSource().contains("Required"));
+    }
+
+    @Test (priority = 3)
     public void validLogin(){
         
         login.performLogin(config.getProperty("username"), config.getProperty("password"));
@@ -37,8 +44,13 @@ public class LoginTest {
         );
     }
 
-    @AfterClass
-    public void tearDown(){
-        driver.quit();
+    @Test(priority = 4, dependsOnMethods = "validLogin")
+    public void logout(){
+        logout.performLogout();
+
+        Assert.assertTrue(
+            driver.getCurrentUrl().contains("login"),
+            "Logout failed, user still inside"
+        );
     }
 }

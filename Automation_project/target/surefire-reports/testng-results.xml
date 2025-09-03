@@ -1,21 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-03T19:01:49 IST" name="Surefire suite" finished-at="2025-09-03T19:01:59 IST" duration-ms="10146">
+  <suite started-at="2025-09-04T00:16:16 IST" name="Surefire suite" finished-at="2025-09-04T00:16:25 IST" duration-ms="9591">
     <groups>
     </groups>
-    <test started-at="2025-09-03T19:01:49 IST" name="Surefire test" finished-at="2025-09-03T19:01:59 IST" duration-ms="10146">
+    <test started-at="2025-09-04T00:16:16 IST" name="Surefire test" finished-at="2025-09-04T00:16:25 IST" duration-ms="9591">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@8909f18]" started-at="2025-09-03T19:01:49 IST" name="setup" finished-at="2025-09-03T19:01:56 IST" duration-ms="7422" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@70be0a2b]" started-at="2025-09-04T00:16:16 IST" name="setup" finished-at="2025-09-04T00:16:18 IST" duration-ms="2701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validLogin()[pri:0, instance:tests.LoginTest@8909f18]" started-at="2025-09-03T19:01:56 IST" name="validLogin" finished-at="2025-09-03T19:01:59 IST" duration-ms="2409" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@70be0a2b]" started-at="2025-09-04T00:16:18 IST" name="initPage" finished-at="2025-09-04T00:16:22 IST" duration-ms="3376" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@8909f18]" started-at="2025-09-03T19:01:59 IST" name="tearDown" finished-at="2025-09-03T19:01:59 IST" duration-ms="264" status="PASS">
+        </test-method> <!-- initPage -->
+        <test-method signature="invalidLogin()[pri:1, instance:tests.LoginTest@70be0a2b]" started-at="2025-09-04T00:16:22 IST" name="invalidLogin" finished-at="2025-09-04T00:16:25 IST" duration-ms="3163" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at tests.LoginTest.invalidLogin(LoginTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@70be0a2b]" started-at="2025-09-04T00:16:25 IST" name="tearDown" finished-at="2025-09-04T00:16:25 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

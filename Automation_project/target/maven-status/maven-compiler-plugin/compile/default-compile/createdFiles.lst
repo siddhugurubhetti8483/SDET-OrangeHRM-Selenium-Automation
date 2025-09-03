@@ -1,6 +1,8 @@
 pages\AddEmployee.class
-pages\Leaveapply.class
 pages\Logout.class
+utils\WaitHelper.class
+pages\Leaveapply.class
+utils\ConfigReader.class
 pages\Dashboard.class
 pages\Login.class
-utils\WaitHelper.class
+utils\DriverManager.class
