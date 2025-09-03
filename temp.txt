@@ -23,3 +23,68 @@ Extra Add-ons (Bonus Points)
 🔹 Assertions (hard & soft) ka usage.
 🔹 Parallel test execution with TestNG.
 🔹 Jenkins me job create karke nightly runs.
+
+
+3. OrangeHRM Functional Modules Cover Kar
+
+Login ke baad aur bhi modules test kar sakta hai:
+
+Dashboard Verification
+
+Verify "Dashboard" text after login
+
+Check if widgets load properly
+
+Admin Module
+
+Add User
+
+Search User
+
+Delete User
+
+PIM (Employee Management)
+
+Add Employee
+
+Edit Employee Details
+
+Delete Employee
+
+Leave Module
+
+Apply Leave
+
+Approve/Reject Leave (if role is Admin)
+
+👉 Ye modules add karte hi tera project ek end-to-end HRM automation suite ban jayega.
+
+4. Data-Driven Testing
+
+Login test ko Excel/CSV/JSON se credentials pass kar ke run kar.
+Example:
+
+Admin login
+
+Wrong login
+
+Empty fields
+
+👉 Ye tumhari real-world automation skill dikhayega.
+
+5. CI/CD Integration
+
+Apna framework GitHub Actions / Jenkins pe run karwa.
+
+Jaise hi push karega, tests automatically run ho jayenge.
+👉 Recruiters ko bohot impress karega.
+
+6. Final Showcase
+
+Project ka README update kar
+
+Test coverage (login, dashboard, PIM, admin module) mention kar
+
+Screenshot / report attach kar
+
+GitHub repo ka link CV me daal de

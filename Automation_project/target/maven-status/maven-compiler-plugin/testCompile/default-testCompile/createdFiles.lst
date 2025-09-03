@@ -1,2 +1,3 @@
+tests\DashboardTest.class
 tests\LoginTest.class
 tests\BaseTest.class
