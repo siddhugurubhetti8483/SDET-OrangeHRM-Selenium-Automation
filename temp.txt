@@ -1,0 +1,25 @@
+Types of Testing
+🔹 Functional Testing → Login, Add Employee, Leave apply.
+🔹 Regression Testing → Har build pe same test suite run karna.
+🔹 Data-Driven Testing → Excel/CSV se multiple login credentials test karna.
+🔹 Cross-Browser Testing → Chrome, Edge, Firefox pe run karna.
+🔹 UI Validation → Page title, labels, buttons verify.
+🔹 Smoke Testing → Just login + dashboard open check karna.
+🔹 Sanity Testing → Add Employee ka quick validation.
+
+
+Frameworks & Tools
+TestNG → Test management, grouping, annotations, reports.
+POM (Page Object Model) → Clean, reusable code structure.
+Data Driven Testing → Apache POI / CSV for test data.
+Extent Reports / Allure Reports → Beautiful test reports.
+Maven/Gradle → Dependency management.
+Jenkins → CI/CD integration ke liye (automation pipeline).
+GitHub/GitLab → Version control showcase ke liye.
+
+Extra Add-ons (Bonus Points)
+🔹 Screenshot capture on test failure.
+🔹 Explicit/Implicit waits ka usage.
+🔹 Assertions (hard & soft) ka usage.
+🔹 Parallel test execution with TestNG.
+🔹 Jenkins me job create karke nightly runs.

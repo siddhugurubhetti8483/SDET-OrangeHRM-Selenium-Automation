@@ -4,8 +4,8 @@
 
 This project demonstrates manual and automated testing of the OrangeHRM demo application .
 
-Automation is implemented using Selenium WebDriver with Java, TestNG, and Page Object Model (POM). 
-The project covers functional, regression, and data-driven testing scenarios for HR modules such as 
+Automation is implemented using Selenium WebDriver with Java, TestNG, and Page Object Model (POM).
+The project covers functional, regression, and data-driven testing scenarios for HR modules such as
 Login, Employee Management (PIM), Leave, and Admin.
 
 ---
@@ -13,9 +13,11 @@ Login, Employee Management (PIM), Leave, and Admin.
 - **OrangeHRM Demo URL:** [https://opensource-demo.orangehrmlive.com](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
 
 ---
+
 ## Technology Stack
+
 - **Language:** Java
-- **UI Automation:** Selenium WebDriver 
+- **UI Automation:** Selenium WebDriver
 - **Test Framework:** TestNG
 - **Reporting:** Extent Reports / Allure Reports
 - **Dependency Management & Build:** Maven
@@ -82,11 +84,12 @@ browser=chrome
 - **Thread-safe TestContext:** For sharing data across tests
 
 ---
- 
+
 ## Installation & Setup
+
 ```
 # Clone repository
-git clone https://github.com/your-username/OrangeHRM-Selenium.git
+git clone: https://github.com/siddhugurubhetti8483/SDET-OrangeHRM-Selenium-Automation.git
 
 # Go to project folder
 cd OrangeHRM-Selenium
@@ -98,16 +101,19 @@ mvn clean install
 ## How to Run Tests
 
 ### Run all tests using Maven:
+
 ```
 mvn test
 ```
 
 ### Run specific test class
+
 ```
 mvn -Dtest=LoginTest test
 ```
 
 ### Run with TestNG suite file
+
 ```
 mvn clean test -DsuiteXmlFile=testng.xml
 ```
@@ -121,9 +127,7 @@ mvn clean test -DsuiteXmlFile=testng.xml
 
 ---
 
-
 - CI/CD pipeline integration with Jenkins
 - Docker & Selenium Grid for distributed testing
 - Integration with Allure Reports
 - API testing integration (RestAssured)
-

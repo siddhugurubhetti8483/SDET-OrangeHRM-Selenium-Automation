@@ -1,0 +1,6 @@
+pages\AddEmployee.class
+pages\Leaveapply.class
+pages\Logout.class
+pages\Dashboard.class
+pages\Login.class
+utils\WaitHelper.class
