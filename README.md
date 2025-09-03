@@ -86,7 +86,7 @@ browser=chrome
 ## Installation & Setup
 ```
 # Clone repository
-git clone https://github.com/your-username/OrangeHRM-Selenium.git
+https://github.com/siddhugurubhetti8483/SDET-OrangeHRM-Selenium-Automation.git
 
 # Go to project folder
 cd OrangeHRM-Selenium
