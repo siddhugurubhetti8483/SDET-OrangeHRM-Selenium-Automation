@@ -9,13 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,591</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">22,832</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.LoginTest</td><td><a href="#m0">invalidLogin</a></td><td rowspan="1">1756925182220</td><td rowspan="1">3163</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">tests.DashboardTest</td><td><a href="#m0">verifyAdminMenu</a></td><td rowspan="1">1756930210262</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m1">verifyDashboardHeader</a></td><td rowspan="1">1756930210250</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m2">verifyLeaveMenu</a></td><td rowspan="1">1756930210268</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m3">verifyPIMMenu</a></td><td rowspan="1">1756930210266</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">tests.LoginTest</td><td><a href="#m4">emptyCredentialLogin</a></td><td rowspan="1">1756930222203</td><td rowspan="1">237</td></tr><tr class="passedeven"><td><a href="#m5">invalidLogin</a></td><td rowspan="1">1756930216372</td><td rowspan="1">5830</td></tr><tr class="passedeven"><td><a href="#m6">logout</a></td><td rowspan="1">1756930223825</td><td rowspan="1">3892</td></tr><tr class="passedeven"><td><a href="#m7">validLogin</a></td><td rowspan="1">1756930222441</td><td rowspan="1">1381</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">tests.LoginTest#invalidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at tests.LoginTest.invalidLogin(LoginTest.java:33)
+<h2>Surefire test</h2><h3 id="m0">tests.DashboardTest#verifyAdminMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pages.Dashboard.isAdminVisible()&quot; because &quot;this.dashboard&quot; is null
+	at tests.DashboardTest.verifyAdminMenu(DashboardTest.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.DashboardTest#verifyDashboardHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pages.Dashboard.isDashboardHeaderVisible()&quot; because &quot;this.dashboard&quot; is null
+	at tests.DashboardTest.verifyDashboardHeader(DashboardTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.DashboardTest#verifyLeaveMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pages.Dashboard.isLeaveVisible()&quot; because &quot;this.dashboard&quot; is null
+	at tests.DashboardTest.verifyLeaveMenu(DashboardTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.DashboardTest#verifyPIMMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pages.Dashboard.isPIMVisible()&quot; because &quot;this.dashboard&quot; is null
+	at tests.DashboardTest.verifyPIMMenu(DashboardTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#emptyCredentialLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginTest#invalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.LoginTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.LoginTest#validLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
